@@ -1,0 +1,108 @@
+.ButtonStyles {
+    height: 100px;
+    width: 200px;
+}
+
+.AddComment {
+    display: flex;
+
+    img {
+        height: 60px;
+    }
+
+    input {
+        border: none;
+        outline: none;
+        align-self: center;
+        border-bottom: 1px solid black;
+        flex: 1;
+    }
+}
+
+.CommentsSection {
+    margin-bottom: 20px;
+}
+
+.CommentWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+
+    .ProfileView {
+        width: 80px;
+
+        img {
+            height: 80px;
+            width: auto;
+        }
+
+        .ProfilePic {
+            border-radius: 50%;
+        }
+    }
+
+    .DetailsView {
+        .CommentInfo {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .Author {
+            display: flex;
+            gap: 10px;
+        }
+    
+        .Duration {
+            color: gray;
+        }
+    
+        .ButtonActions {
+            display: flex;
+            gap: 20px;
+            margin-top: 10px;
+    
+            .ThumbsUp {
+                cursor: pointer;
+    
+                img {
+                    height: 20px;
+                    width: auto;
+                    border-radius: 50%;
+                    margin-right: 10px;
+    
+                    &:hover {
+                        background-color: red;
+                    }
+                }
+            }
+    
+            .ThumbsDown {
+                cursor: pointer;
+    
+                img {
+                    height: 20px;
+                    width: auto;
+                    border-radius: 50%;
+    
+                    &:hover {
+                        background-color: red;
+                    }
+                }
+            }
+    
+            .Button {
+                background: transparent;
+                outline: none;
+                border: none;
+                border-radius: 16px;
+                padding: 0 20px;
+                cursor: pointer;
+    
+                &:hover {
+                    background-color: red;
+                }
+            }
+        }
+    }
+}

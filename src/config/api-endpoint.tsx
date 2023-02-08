@@ -1,0 +1,1 @@
+export const GetYouTubeComments = 'https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies'
