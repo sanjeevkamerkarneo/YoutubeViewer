@@ -6,10 +6,10 @@ import ThumbsUp from "../assets/thumbs-up.png";
 import { useSelector } from 'react-redux';
 import { RootState } from '../store/store';
 
-// interface IProps {
-//   comments: any;
-// }
-
+/**
+   * Function is returning the view for single comment
+   * @param {*} data
+   */
 const Comment = (data: any) => (
   <div className={styles.CommentWrapper}>
     <div className={styles.ProfileView}>
@@ -42,16 +42,12 @@ const Comment = (data: any) => (
 );
 
 const CommentList = () => {
+  // fetching comments from store 
   const comments: Array<any> = useSelector(
     (state: RootState) => {
-      console.log('comments getch here', state.comments.comments);
-      // updateComments(state.comments.comments);
       return state.comments.comments
     }
   );
-  useEffect(() => {
-    console.log('comments list', comments);
-  }, []);
 
   return (
     <div className={styles.CommentsSection}>
@@ -64,8 +60,6 @@ const CommentList = () => {
           data={comment}
         />
       ))}
-
-
     </div>
   )
 

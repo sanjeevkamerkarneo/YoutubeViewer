@@ -3,7 +3,6 @@ import CommentList from "./comment_list";
 
 interface IProps {
   video: any;
-  // comments: any;
 }
 
 interface IState {
